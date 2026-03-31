@@ -40,7 +40,7 @@
     "itemListElement": [
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Basement Finishing"}},
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Basement Remodeling"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mother-in-Law Suite Construction"}}
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mother in Law Suite Construction"}}
     ]
   }
 }
@@ -104,7 +104,7 @@ nav.scrolled {
   text-decoration: none;
 }
 
-.nav-logo img { height: 42px; width: auto; border-radius: 4px; }
+.nav-logo img { height: 80px; width: auto; border-radius: 4px; }
 
 .nav-logo-text {
   font-family: 'DM Sans', sans-serif;
@@ -1019,7 +1019,7 @@ footer {
   gap: 40px;
 }
 
-.footer-brand img { height: 36px; }
+.footer-brand img { height: 80px; }
 
 .footer-brand p {
   margin-top: 12px;
@@ -1107,9 +1107,9 @@ footer {
     <div class="nav-logo-text">UTAH COUNTY <span>BASEMENT</span> PROS<br><span style="font-size:10px;font-weight:400;letter-spacing:0.5px;color:var(--text-light);">by Tanner Construction</span></div>
   </a>
   <ul class="nav-links">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#process">How It Works</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#process">How It Works</a></li>
+    <li><a href="#pricing">Pricing</a></li>
     <li><a href="#areas">Areas</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#estimate" class="nav-cta">Free Estimate</a></li>
@@ -1122,9 +1122,9 @@ footer {
 <!-- MOBILE MENU -->
 <div class="mobile-menu">
   <button class="mobile-close" onclick="this.parentElement.classList.remove('open')">&times;</button>
-  <a href="#services" onclick="this.parentElement.classList.remove('open')">Services</a>
-  <a href="#process" onclick="this.parentElement.classList.remove('open')">How It Works</a>
   <a href="#about" onclick="this.parentElement.classList.remove('open')">About</a>
+  <a href="#process" onclick="this.parentElement.classList.remove('open')">How It Works</a>
+  <a href="#pricing" onclick="this.parentElement.classList.remove('open')">Pricing</a>
   <a href="#areas" onclick="this.parentElement.classList.remove('open')">Areas</a>
   <a href="#contact" onclick="this.parentElement.classList.remove('open')">Contact</a>
   <a href="#estimate" onclick="this.parentElement.classList.remove('open')">Free Estimate</a>
@@ -1133,17 +1133,18 @@ footer {
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <div class="hero-badge">Licensed General Contractor &bull; Utah County</div>
+    <img src="tanner-construction-logo.png" alt="Tanner Construction" style="height:80px;width:auto;margin-bottom:32px;">
+    <div class="hero-badge">Licensed General Contractor | Utah County</div>
     <h1>Utah County's Basement <span class="accent">Finishing Specialists.</span></h1>
     <p class="hero-sub">One service. One market. Done right. We finish and remodel basements across Utah County from framing to final walkthrough, with transparent pricing and zero surprises.</p>
     <div class="hero-actions">
-      <a href="#estimate" class="btn-primary">Get a Free Estimate &rarr;</a>
-      <a href="#services" class="btn-secondary">View Our Services</a>
+      <a href="#estimate" class="btn-primary">Get My Free Estimate</a>
+      <a href="#about" class="btn-secondary">Meet the Team</a>
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
-        <h3>10+</h3>
-        <p>Years Combined Experience</p>
+        <h3>30+</h3>
+        <p>Years Experience</p>
       </div>
       <div class="hero-stat">
         <h3>100%</h3>
@@ -1151,68 +1152,47 @@ footer {
       </div>
       <div class="hero-stat">
         <h3>24hr</h3>
-        <p>Estimate Turnaround</p>
+        <p>Response Time</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="services" id="services">
-  <div class="container reveal">
-    <div class="section-label">What We Do</div>
-    <div class="section-title">One service. <span class="accent">Done right.</span></div>
-    <p class="section-sub">We do basements exclusively. That focus means the same crews, the same workflow, and the same quality on every single project.</p>
-    <div class="services-grid" style="grid-template-columns: 1fr; max-width: 700px;">
-      <div class="service-card">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21V14h6v7"/><line x1="3" y1="21" x2="21" y2="21"/><path d="M7 8h10"/></svg>
-        </div>
-        <h3>Basement Finishing & Remodels</h3>
-        <p>Turn raw square footage into living space. Rental units, mother-in-law suites, entertainment rooms, home offices, and more. We handle every trade: framing, electrical, plumbing, HVAC, insulation, drywall, flooring, paint, trim, and bathrooms. From concrete to move-in ready.</p>
-        <span class="price-range">$25,000 - $60,000</span>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- WHAT YOU GET -->
 <section class="features" id="features">
   <div class="container reveal">
     <div class="section-label">Every Project</div>
     <div class="section-title">What you get <span class="accent">working with us.</span></div>
-    <p class="section-sub">No upsells, no hidden fees. This is what every Utah County Basement Pros project includes.</p>
+    <p class="section-sub">No upsells, no hidden fees. This is what every project includes.</p>
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
         <h4>Licensed General Contractor</h4>
         <p>Every project is backed by a licensed GC. Permits, inspections, and code compliance are handled for you.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
         <h4>Transparent Pricing</h4>
         <p>Detailed line item estimates before work starts. No surprises, no change orders without your signed approval.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
         <h4>Vetted Subcontractors</h4>
-        <p>We work with trade crews we've personally vetted. Electricians, plumbers, framers, tile setters who do it right.</p>
+        <p>We work with trade crews we've personally vetted. Electricians, plumbers, framers, and tile setters who do it right.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
         <h4>On Site Daily</h4>
         <p>We don't just manage from a desk. Our team is on your job site every day keeping things on track.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
         <h4>Clear Communication</h4>
-        <p>Weekly progress updates, real-time photo documentation, and direct access to your project manager.</p>
+        <p>Weekly progress updates, real time photo documentation, and direct access to your project manager.</p>
       </div>
       <div class="feature-card">
-        <div class="feature-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
         <h4>Fully Insured</h4>
         <p>General liability and workers comp coverage on every project. Your home is protected.</p>
       </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="#estimate" class="btn-primary">Get Your Free Consultation</a>
     </div>
   </div>
 </section>
@@ -1230,7 +1210,7 @@ footer {
       </div>
       <div class="process-step">
         <div class="step-number">2</div>
-        <h4>On-Site Walkthrough</h4>
+        <h4>Onsite Walkthrough</h4>
         <p>We visit your home, measure the space, talk through your vision, and build a detailed scope and estimate.</p>
       </div>
       <div class="process-step">
@@ -1248,6 +1228,9 @@ footer {
         <h4>Final Walkthrough</h4>
         <p>We walk through every detail together. The job isn't done until you're completely satisfied. Final 10% collected.</p>
       </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <a href="#estimate" class="btn-primary">Start Your Project</a>
     </div>
   </div>
 </section>
@@ -1294,7 +1277,10 @@ footer {
         </tbody>
       </table>
     </div>
-    <p class="pricing-note">Estimates vary based on project complexity, materials, and site conditions. Request a free on-site estimate for an accurate quote.</p>
+    <p class="pricing-note">Estimates vary based on project complexity, materials, and site conditions.</p>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="#estimate" class="btn-primary">Get Your Free Estimate</a>
+    </div>
   </div>
 </section>
 
@@ -1303,28 +1289,31 @@ footer {
   <div class="container reveal">
     <div class="section-label">Who We Are</div>
     <div class="section-title">A family business built on <span class="accent">trust.</span></div>
-    <p class="about-text">Tanner Construction is a family-owned basement finishing company with over 30 years of combined experience. We believe in doing things the right way: transparent pricing, honest communication, and quality craftsmanship on every project. When you work with us, you're not just another job number. You're working directly with the owners who stake their family name on every basement we finish. We've built lasting relationships with the best subcontractors in Utah County, and that network allows us to deliver consistent quality, predictable timelines, and competitive pricing. No surprises. No runaround. Just a basement finished right.</p>
+    <p class="about-text">Tanner Construction is a family-owned basement finishing company with over 30 years of experience. We believe in doing things the right way: transparent pricing, honest communication, and quality craftsmanship on every project. When you work with us, you're working directly with the owners who stake their family name on every basement we finish. After decades of success in California, we've moved to Utah and are ready to bring that same expertise to homeowners here. No surprises. No runaround. Just a basement finished right.</p>
     <div class="about-content">
       <div class="about-card">
         <h4>Gary Tanner</h4>
-        <div class="role">Founder / Master Craftsman</div>
-        <p>Gary has been a general contractor for over 30 years, building everything from custom homes to commercial projects across Utah. His technical expertise spans framing, finish carpentry, electrical coordination, and project management. Known for his meticulous attention to detail, Gary personally reviews every scope of work and maintains quality standards on every job. Over three decades, he's built strong relationships with the best subcontractors in the business, crews who share his commitment to doing things right the first time.</p>
+        <div class="role">Founder</div>
+        <p>Gary was a licensed general contractor in California for over 30 years, specializing in tenant improvement construction. He owned and operated Amaron Construction, building out commercial spaces across the state. His technical expertise spans every aspect of construction, from framing and finish carpentry to electrical coordination and full project management. Known for his meticulous attention to detail, Gary personally reviews every scope of work and maintains quality standards on every job. After three decades of building strong relationships with top subcontractors, he's brought that same network and expertise to Utah.</p>
         <div class="creds">
           <span class="cred-tag">30+ Years Experience</span>
-          <span class="cred-tag">Master Craftsman</span>
-          <span class="cred-tag">Trusted Subcontractor Network</span>
+          <span class="cred-tag">Former Owner, Amaron Construction</span>
+          <span class="cred-tag">CA Licensed GC</span>
         </div>
       </div>
       <div class="about-card">
         <h4>Hunting Tanner</h4>
-        <div class="role">Licensed General Contractor / Operations</div>
-        <p>Hunting is a third-generation contractor who grew up on job sites working alongside his dad. He earned his degree in Finance from BYU, combining hands-on building experience with strong business fundamentals. As the licensed GC, Hunting handles everything that keeps your project moving: estimates, contracts, scheduling, inspections, client communication, and financial management. He's on site daily, making sure every detail is handled and every question gets answered.</p>
+        <div class="role">Founder / Licensed General Contractor</div>
+        <p>Hunting is a third-generation contractor who grew up on job sites working alongside his dad. He earned his degree in Finance from BYU, combining hands-on building experience with strong business fundamentals. As the licensed GC in Utah, Hunting handles everything that keeps your project moving: estimates, contracts, scheduling, inspections, client communication, and financial management. He's on site daily, making sure every detail is handled and every question gets answered.</p>
         <div class="creds">
-          <span class="cred-tag">Licensed GC</span>
+          <span class="cred-tag">Utah Licensed GC</span>
           <span class="cred-tag">BYU Finance</span>
           <span class="cred-tag">3rd Generation Builder</span>
         </div>
       </div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="#estimate" class="btn-primary" style="background:var(--powder);color:var(--dark);">Get Your Free Estimate</a>
     </div>
   </div>
 </section>
@@ -1400,14 +1389,8 @@ footer {
         <div class="section-label">Get Started</div>
         <div class="section-title">Request a <span class="accent">free estimate.</span></div>
         <p class="section-sub">Tell us about your project. We'll call you within 24 hours to discuss scope, timeline, and pricing. No obligation, no pressure.</p>
-        <div class="estimate-promise">
-          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <p><strong>Our promise:</strong> We respond within 24 hours with a call to discuss your project. If we're a good fit, we'll schedule a free on site walkthrough and deliver a detailed estimate.</p>
-        </div>
-        <div class="estimate-promise" style="margin-top: 12px;">
-          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          <p><strong>Licensed & insured.</strong> Every project is backed by a licensed general contractor with full liability and workers comp coverage.</p>
-        </div>
+        <p style="margin-top:20px;color:var(--text-light);line-height:1.7;"><strong>Our promise:</strong> We respond within 24 hours with a call to discuss your project. If we're a good fit, we'll schedule a free onsite walkthrough and deliver a detailed estimate.</p>
+        <p style="margin-top:12px;color:var(--text-light);line-height:1.7;"><strong>Licensed and insured.</strong> Every project is backed by a licensed general contractor with full liability and workers comp coverage.</p>
       </div>
       <form class="estimate-form" onsubmit="handleSubmit(event)">
         <div class="form-row">
@@ -1430,41 +1413,7 @@ footer {
         </div>
         <div class="form-group">
           <label>City</label>
-          <select required>
-            <option value="">Select your city</option>
-            <option>Alpine</option>
-            <option>American Fork</option>
-            <option>Bluffdale</option>
-            <option>Cedar Fort</option>
-            <option>Cedar Hills</option>
-            <option>Cottonwood Heights</option>
-            <option>Draper</option>
-            <option>Eagle Mountain</option>
-            <option>Fairfield</option>
-            <option>Herriman</option>
-            <option>Highland</option>
-            <option>Holladay</option>
-            <option>Lehi</option>
-            <option>Lindon</option>
-            <option>Mapleton</option>
-            <option>Midvale</option>
-            <option>Orem</option>
-            <option>Payson</option>
-            <option>Pleasant Grove</option>
-            <option>Provo</option>
-            <option>Riverton</option>
-            <option>Salem</option>
-            <option>Sandy</option>
-            <option>Saratoga Springs</option>
-            <option>South Jordan</option>
-            <option>Spanish Fork</option>
-            <option>Springville</option>
-            <option>Vineyard</option>
-            <option>Wallsburg</option>
-            <option>West Jordan</option>
-            <option>White City</option>
-            <option>Other</option>
-          </select>
+          <input type="text" placeholder="Lehi, Saratoga Springs, etc." required>
         </div>
         <div class="form-group">
           <label>Project Type</label>
@@ -1479,7 +1428,8 @@ footer {
           <label>Tell us about your project</label>
           <textarea placeholder="Describe the scope of work, your timeline, or anything else we should know..."></textarea>
         </div>
-        <button type="submit" class="form-submit" id="submitBtn">Request Free Estimate &rarr;</button>
+        <button type="submit" class="form-submit" id="submitBtn">Get My Free Estimate</button>
+        <p style="font-size:12px;color:var(--text-light);margin-top:16px;line-height:1.5;">Your information is only used to contact you about your project. We will never send automated spam emails or sell your information to third parties.</p>
       </form>
     </div>
   </div>
@@ -1508,16 +1458,16 @@ footer {
     </div>
     <div class="footer-links">
       <h5>Quick Links</h5>
-      <a href="#services">Services</a>
-      <a href="#process">How It Works</a>
       <a href="#about">About Us</a>
+      <a href="#process">How It Works</a>
+      <a href="#pricing">Pricing</a>
       <a href="#estimate">Free Estimate</a>
     </div>
     <div class="footer-links">
-      <h5>Services</h5>
-      <a href="#services">Basement Finishing</a>
-      <a href="#services">Basement Remodels</a>
-      <a href="#services">Mother-in-Law Suites</a>
+      <h5>What We Do</h5>
+      <a href="#estimate">Basement Finishing</a>
+      <a href="#estimate">Basement Remodels</a>
+      <a href="#estimate">ADU / Mother in Law Suites</a>
     </div>
     <div class="footer-links">
       <h5>Contact</h5>
