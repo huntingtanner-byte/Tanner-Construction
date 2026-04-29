@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(cd:*)",
+      "Bash(gh api:*)",
+      "Bash(where gh:*)",
+      "Read(//c/Program Files/**)",
+      "Bash(powershell -command \":*)",
+      "Read(//c/Users/hunti/OneDrive/Desktop/**)",
+      "Bash(mv \"Anderson & Tanner\" \"Tanner Construction\")",
+      "Bash(gh repo:*)",
+      "Bash(mv \"BD3FCC6D-AE56-4C34-AA73-399C62905BBE \\(1\\).png\" \"tanner-construction-logo.png\")",
+      "Bash(mv \"19DF5A1A-17FD-43F7-A9C2-7A222DCBC209 \\(1\\).png\" \"tanner-t-icon.png\")",
+      "Bash(mv \"T Logo.png\" \"t-logo.png\")",
+      "Bash(mv \"Tanner Construction Logo.png\" \"tanner-construction-logo.png\")",
+      "WebFetch(domain:github.com)",
+      "Bash(npm install *)",
+      "Bash(uipro init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
